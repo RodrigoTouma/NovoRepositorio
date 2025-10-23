@@ -1,0 +1,104 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo de Mario Bros</title>
+    <link rel="stylesheet" href="{% static 'curriculo/css/meu-curriculo.css' %}"> 
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav>
+        <ul class="navegacao">
+            <li><a href="#resumo">Resumo</a></li>
+            <li><a href="#formacao">Formação</a></li>
+            <li><a href="habilidades">Habilidades</a></li>
+            <li><a href="#disciplinas">Disciplinas</a></li>
+            <li><a href="#contato">Contato</a></li>
+            <li><a href="http://www.puc-rio.br">PUC-Rio</a></li>
+            <li><a href="index.html">Currículo do Spiff</a></li>
+        </ul>
+    </nav>
+
+    <img src="{% static 'curriculo/img/MarioBros.jpeg' %}" alt="Foto de perfil do Mario Bros"> 
+
+    <main>
+        <section id="resumo">
+            <h1>Currículo de Mario Bros</h1>
+            <div id="sumario">
+                <p>
+                    Encanador profissional com experiência em aventuras subterrâneas, resgate de princesas e manutenção de canos.
+                    Conhecido por sua determinação, coragem e habilidade em saltar sobre seus inimigos.
+                </p>
+            </div>
+        </section>
+
+        <section id="formacao">
+            <h2>Formação</h2>
+            <ul>
+                <li>Curso técnico em Encanamento e Soluções Hidráulicas - Reino do Cogumelo</li>
+                <li>Certificado em Saltos de Precisão e Reparos de Emergência - Academia do Luigi</li>
+            </ul>
+        </section>
+
+        <section id="habilidades">
+            <h2>Habilidades</h2>
+                <ul>
+                    <li>Reparo rápido de canos e sistemas hidráulicos</li>
+                    <li>Salto triplo e corrida em plataformas instáveis</li>
+                    <li></li>Condução de karts em circuitos perigosos</li>
+                </ul>
+        </section>
+
+        <section id="disciplinas"></section>
+            <h2>Disciplinas Cursadas</h2>
+            <table border=1>
+                <thead>
+                    <tr>
+                        <th>Código</th>
+                        <th>Disciplina</th>
+                        <th>Ano e Semestre</th>
+                        <th>Professor</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>ENC1010</td>
+                        <td>Introdução ao Encanamento</td>
+                        <td>1982.1</td>
+                        <td>Prof. Luigi</td>
+                    </tr>
+                    <tr>
+                        <td>ADV1020</td>
+                        <td>Aventuras e Resgate de Princesas</td>
+                        <td>1983.1</td>
+                        <td>Profª Peach</td>
+                    </tr>
+                    <tr>
+                        <td>TEC1030</td>
+                        <td>Técnicas Avançadas de Salto</td>
+                        <td>1983.2</td>
+                        <td>Prof. Toad</td>                    
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="contato">
+            <h2>Contato</h2>
+            <ul>
+                <li>Telefone: (55) 21 99999-9999</li>
+                <li>Email: mario.bros@nintendo.com</li>
+                <li>Endereço: Reino do Cogumelo</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>"Nenhum cano entupido fica para trás... It's me, Mario!</p>
+    </footer>
+
+</body>
+</html>
