@@ -1,32 +1,11 @@
 from django.shortcuts import render
+from django.contrib.auth.decorators import login_required
 
 # Create your views here.
 
 def curriculo_spiff(request):
-    '''
-    View function for the astronaut Spiff's resume page.
-    Renders the index.html template.
-    This will display the resume page when the corresponding URL is accessed
-    The curriculo_spiff view is responsible for displaying the content of the resume page
-    It is a simple function-based view
-    It takes a request object as a parameter
-    It returns a rendered HTML response
-    @param request: The HTTP request object
-    @return: Rendered HTML response with resume page content
-    '''
     return render(request, 'curriculo/index.html')
 
+@login_required
 def curriculo_mariobros(request):
-    '''
-    View function for Mario Bros resume page version 2.
-    A responsive version of the resume page.
-    Renders the meu-curriculo.html template.
-    This will display the resume page version 2 when the corresponding URL is accessed
-    The curriculo_mariobros view is responsible for displaying the content of the resume page version 2
-    It is a simple function-based view
-    It takes a request object as a parameter
-    It returns a rendered HTML response
-    @param request: The HTTP request object
-    @return: Rendered HTML response with resume page version 2 content
-    '''
     return render(request, 'curriculo/meu-curriculo.html')
