@@ -106,6 +106,8 @@ LOGIN_URL = '/accounts/login/'       # URL de login (padrão)
 # válidas no seu arquivo MeuSite/curriculo/urls.py
 LOGIN_REDIRECT_URL = '/curriculo/spiff/'   # Para onde vai após login
 
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
 # Internationalization
 # https://docs.djangoproject.com/en/5.2/topics/i18n/
 
