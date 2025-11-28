@@ -27,6 +27,11 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+CSRF_TRUSTED_ORIGINS = [
+    'https://localhost:8000', 
+    'http://localhost:8000',
+    'https://fictional-zebra-5vq7r9v464x2px6j-8000.app.github.dev/',
+]
 
 # Application definition
 
